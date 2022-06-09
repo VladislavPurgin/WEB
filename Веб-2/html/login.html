@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<html>
+    <head>
+        <link href="calc.ico" rel="shortcut icon" type="image/x-icon">
+        <script src="../js/jquery-1.6.1.js"></script>
+        <script src="../js/controller.js"></script>
+        <title>Log in</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="grid">
+            <div class="grid-item"></div>
+            <div class="grid-item navigation">
+            <a class="navbar-brand"><img src="../ico/calc.png"
+                                     alt="png"
+                                     width="70"></a>
+                <nav>
+                  <a href="profile.html">Profile</a> | Log in
+                </nav>
+            </div>
+            <div class="grid-item"></div>
+        </div>
+
+        
+        <header>
+          <h3>Logging in</h3>
+        </header>
+
+
+        <div class="grid">
+            <div class="grid-item"></div>
+            <div class="grid-item navigation">
+              We welcome you again, we were waiting for you, enter your details<br><br>
+
+              Email or Name<br>
+              <input placeholder="your.mail@gmail.com or name" required><br>
+              Password<br>
+              <input type="password" required><br>
+              <br>
+              <button class="mdc-button foo-button" onclick="login()">
+                <div class="mdc-button__ripple"></div>
+                <a class="btn btn-primary" href="profile.html">Log in</a>
+              </button>
+            </div>
+            
+            <div class="grid-item"></div>
+        </div>
+        <a class="btn btn-primary" href="start_page.html">Back</a>
+    </body>
+</html>

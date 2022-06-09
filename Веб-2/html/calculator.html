@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link href="../ico/calc.png" rel="shortcut icon" type="image/x-icon">
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+
+        <script src="../js/jquery-1.6.1.js"></script>
+        <script src="../js/controller.js"></script>
+        <script src="../js/calc.js"></script>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="grid-item"></div>
+            <div class="grid-item navigation">
+            <a class="navbar-brand"><img src="../ico/calc.png"
+                                     alt="png"
+                                     width="70"></a>
+              <nav>
+                Calculator |
+                    <a href="profile.html">Profile</a>
+                </nav>
+            </div>
+            <div class="grid-item"></div>
+        </div>
+
+        
+        <header>
+          <h3>Calculator</h3>
+        </header>
+
+
+        <div class="calc-grid">
+            <div class="grid-item"></div>
+            <div class="grid-item calculator">
+              <table>
+                <tr>
+                  <td>
+                    <button onclick="click_calc(7)" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">7</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button onclick="click_calc(8)" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">8</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button onclick="click_calc(9)" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">9</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button onclick="click_calc('/')" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">/</span>
+                    </button>
+                  </td>
+                </tr>
+          
+                <tr>
+                  <td>
+                    <button onclick="click_calc(4)" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">4</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button onclick="click_calc(5)" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">5</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button onclick="click_calc(6)" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">6</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button onclick="click_calc('*')" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">*</span>
+                    </button>
+                  </td>
+                </tr>
+          
+                <tr>
+                  <td>
+                    <button onclick="click_calc(1)" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">1</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button onclick="click_calc(2)" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">2</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button onclick="click_calc(3)" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">3</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button onclick="click_calc('-')" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">-</span>
+                    </button>
+                  </td>
+                </tr>
+          
+                <tr>
+                  <td>
+                    <button onclick="click_calc(0)" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">0</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button onclick="click_calc('.')" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">.</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button onclick="click_calc('+')" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">+</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button onclick="click_calc('=')" class="mdc-button foo-button">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">=</span>
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <br>
+                <textarea readonly id="out" class="output" placeholder="Output"></textarea>
+                <p id="output"></p>
+            </div>
+            <div class="grid-item"></div>
+        </div>
+
+    </body>
+</html>
